@@ -1,2 +1,2 @@
 # AP2
-Développement d'une application JAVA.
+Application JAVA Gestion d'une borne de bibliothèque
