@@ -1,0 +1,71 @@
+package model;
+
+import java.util.ArrayList;
+
+public class ADHERENT {
+
+	private String num;
+	private String nom;
+	private String prenom;
+	private String email;
+	
+	
+		public ArrayList<LIVRE>ListLivre = new ArrayList<LIVRE>();
+		
+	public ADHERENT(String num, String nom, String prenom, String email, ArrayList<LIVRE> ListLivres) {
+		super();
+		this.num = num;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.email = email;
+		ListLivre = ListLivres;
+	}
+
+	public String getNum() {
+		return num;
+	}
+
+	
+	public ArrayList<LIVRE> getListLivre() {
+		return ListLivre;
+	}
+
+	public void setListLivre(ArrayList<LIVRE> ListLivres) {
+		ListLivre = ListLivres;
+	}
+
+	public void setNum(String num) {
+		this.num = num;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getPrenom() {
+		return prenom;
+	}
+
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Override
+	public String toString() {
+		return "ADHERENT []";
+	}
+
+}
+
