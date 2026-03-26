@@ -21,6 +21,5 @@ public class mainMVC {
 
         View_Accueil window = new View_Accueil();
 
-        
     }
 }
