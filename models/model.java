@@ -142,11 +142,13 @@ public class model {
         return null;
     }
     
-    public void UpdateEmail (String numAdherent, String emailAdherent) throws SQLException {
+    public void UpdateInfo (String numAdherent, String nomAdherent, String prenomAdherent, String emailAdherent) throws SQLException {
     	PreparedStatement pstmt;
-    	String requete = "UPDATE adherent SET email = ? WHERE num = ?";
+    	String requete = "UPDATE adherent SET email = ?, prenom = ?, nom = ? WHERE num = ?";
     	pstmt = con.prepareStatement(requete);
-    	pstmt.setString(2, numAdherent);
+    	pstmt.setString(4, numAdherent);
+    	pstmt.setString(3, nomAdherent);
+    	pstmt.setString(2, prenomAdherent);
 		pstmt.setString(1, emailAdherent);
 		pstmt.executeUpdate();
     }
@@ -187,4 +189,3 @@ public class model {
     }
 
 }
-
